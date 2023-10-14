@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+/CMakeFiles
+/Debug
+/MLP_architecture.dir/Debug
+/x64
+/ALL_BUILD.vcxproj
+/ALL_BUILD.vcxproj.filters
+/CMakeCache.txt
+/MLP_architecture.sln
+/MLP_architecture.vcxproj.filters
+/MLP_architecture.vcxproj
+/Project.sln
+/ZERO_CHECK.vcxproj
+/ZERO_CHECK.vcxproj.filters
