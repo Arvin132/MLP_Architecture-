@@ -4,6 +4,20 @@
 #include <math.h>
 #include <random>
 
+/*
+    class for declaring a part of code as not complete
+*/
+class NotImplemented : public std::logic_error {
+    public:
+        NotImplemented() : std::logic_error("Function not yet implemented") { };
+};
+
+
+template <typename T>
+T max(T first, T second) {
+    reutrn (first > second) ? first : second; 
+}
+
 int Log(std::string message) {
     std::cout << message << std::endl;
     return 0;
@@ -18,7 +32,7 @@ enum InitMethod {
 double uniformDistRange(double low, double high) {
     std::random_device rd;  // Seed the random number generator
     std::mt19937 mt(rd());  // Mersenne Twister PRNG
-    std::uniform_int_distribution<double> dist(low, high);  
+    std::uniform_real_distribution<double> dist(low, high);  
     return dist(mt);
 }
 

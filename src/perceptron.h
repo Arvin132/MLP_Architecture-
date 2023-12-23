@@ -16,7 +16,7 @@ class Perceptron {
     double (*limiter)(double);
 
     public:
-        bool setValueUsingLimiter(double given);
+        double setValueUsingLimiter(double given);
         double getValue();
         void setLimiter(double (*newLimiter)(double));
         Perceptron(double init, double (*limiter)(double)); 

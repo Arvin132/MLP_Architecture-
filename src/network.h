@@ -1,6 +1,6 @@
 #ifndef __MLP_NETWORK__
 #define __MLP_NETWORK__
-#include "perceptron.hpp"
+#include "perceptron.h"
 #include "helper.h"
 #include "limiter.h"
 #include <vector>
@@ -11,6 +11,11 @@ using std::string;
 using std::vector;
 using std::tuple;
 using std::set;
+
+/*
+    In case multiple types of layers were to be implemented
+*/
+
 
 const set<string> layerTypeNameList {
     "Dense Layer",

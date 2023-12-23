@@ -3,12 +3,15 @@
 
 enum LimiterType {
     SIGMOID=0,
-    RELU
+    RELU,
+    STEP
 };
 
 double sigmoid(double given);
 
 double ReLU(double given);
+
+double stepLimiter(double given);
 
 double softMax(double given);
 #endif
